@@ -1,4 +1,4 @@
-const getData = () => {
+const getData = (str) => {
     // return fetch("https://jsonplaceholder.typicode.com/posts", {
     //   method: "POST",
     //   body: JSON.stringify({
@@ -11,7 +11,7 @@ const getData = () => {
     //   },
     // })
     return fetch(
-      "https://ozon-d3bcc-default-rtdb.firebaseio.com/goods.json"
+      `https://ozon-d3bcc-default-rtdb.firebaseio.com/goods.json?${str ? `search=${str}` : ''}`
     ).then((res) => res.json());
 }
 

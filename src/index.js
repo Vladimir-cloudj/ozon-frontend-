@@ -1,8 +1,12 @@
 import cart from './modules/cart';
 import getData from './modules/getData';
-import second from './modules/second';
+import load from './modules/load';
+import search from './modules/search';
+import catalog from './modules/catalog';
 
-getData();
+// getData();
 // getData().then((data) => console.log(data));
 cart();
-second();
+load();
+search();
+catalog();
